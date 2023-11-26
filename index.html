@@ -109,6 +109,27 @@
             cursor: pointer;
         }
 
+        .splashAd {
+            position: fixed;
+            top: 10%; /* İlk reklamın konumu */
+            left: 50%;
+            transform: translate(-50%, -10%);
+            z-index: 1000;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            display: block;
+        }
+
+        .splashAdHidden {
+            display: none;
+        }
+
+        .secondAd {
+            top: 60%; /* İkinci reklamın konumu */
+        }
+        
         .topNav {
             position: relative;
             width: 100%;
@@ -1054,6 +1075,25 @@
 </div>
 <div class="macListe" id="football" style="display: none;">
 
+<!-- İlk Reklam -->
+    <div id="firstSplashAd" class="splashAd">
+        <a href="https://bit.ly/TIKLAGIR" target="_blank">
+            <img src="/xxsss.jpg" alt="Reklam">
+        </a>
+        <button onclick="document.getElementById('firstSplashAd').style.display='none'">Kapat</button>
+    </div>
+
+    <!-- İkinci Reklam -->
+    <div id="secondSplashAd" class="splashAd secondAd">
+        <a href="https://bit.ly/TIKLAGIR" target="_blank">
+            <img src="/xxsss.jpg" alt="Reklam">
+        </a>
+        <button onclick="document.getElementById('secondSplashAd').style.display='none'">Kapat</button>
+    </div>
+
+    <!-- Sayfanın geri kalan içeriği -->
+
+        
 #akisbaslangic
 <div class="mac iframeYayin" data-url="/channel.html?id=yayinstar">
     <span class="saat"> 19:00</span>
